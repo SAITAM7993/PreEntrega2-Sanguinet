@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+header{      
+    height: 75vh;    
+    background-image:url(../media/misc/banner.webp) ;
+    background: linear-gradient(to right, rgba(0,0,0,0.7),rgba(0,0,0,0.1), rgba(0,0,0,0)), url(../media/misc/banner.webp) no-repeat; /*para que me haga una sombra a la izquierda y no moleste fondo con el texto*/
+    background-size: cover;      
+    background-repeat: no-repeat;  
+    background-position: top;   
+    overflow-x: hidden; /*container fluid del header me generaba un scrollbar, solucionado con esto*/
+}
+
+#about, #news, #gallery, #gallery-full, #contact, #new{
+    padding: 5%; /*este padding si lo ponia con medidas absolutas me dejaba mal el responsive*/
+}
+
+.c-image{ /*para acomodar tamaño inicial de about us*/
+    height: 100%;
+    object-fit:cover;
+}
+
+.c-item{
+    height:100%;
+}
+
+.c-item-small{
+    height: auto;
+    width:300px;
+}
+.icon-white{
+    color:white;
+}
+ h3{
+    margin:15px 40px 15px 40px;
+}
+
+.btn{
+   
+    border-radius: 50px; /*para redondear botonesde boostrap*/
+    background-color: #0d6efd !important;
+}
+.c-button:active, a.active { /*hice clase custom para que no afectara el slider*/
+    background-color: #0d6efd !important;
+}
+
+.c-button:hover, a:hover{
+    background-color: white !important;
+    color:#0d6efd !important;   
+    
+}
+.img-link{ /*para cuando le haga  hover se agrande pero no tenga overflow*/
+    overflow: hidden !important; 
+}
+.card-img:hover{
+    transform:scale(1.1);   
+    transition: all 0.2s ease-in; /*paraque sea gradual*/
+}
+a{
+    text-decoration: none; /*para sacarle formato a los links del footer*/    
+}
+
+.navbar-toggler{
+    border: none;
+}
+#search{   
+    margin-top: 80px;
+    padding:2%;
+}
+
+
+
+/*
+
+@media (max-width: 1100px) {
+    .c-bg-image {
+        background-position: cover;
+        background-image: url(../media/misc/banner-med.jpg);
+    }
+}
+
+@media (max-width:560px) {
+    .c-bg-image {
+        background-position: fill;
+        background-image: url(../media/misc/banner-small.jpg);
+    }
+    
+}
+*/
