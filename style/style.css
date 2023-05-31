@@ -25,7 +25,13 @@ header{
 .c-item{
     height:100%;
 }
+.c-toggler-icon:active, .c-toggler-icon:hover{
+ border: none !important;
+}
+.c-toggler-icon{
+    color:white !important;;
 
+}
 .c-item-small{
     height: auto;
     width:300px;
