@@ -32,35 +32,35 @@
                 <!-- justify-content-center centra todo, va aca para que el boton de mobile no quede centrado-->
                 <ul class="navbar-nav fs-5">
                     <li class="nav-item px-3"> <!--px es padding derecha-->
-                        <a class="nav-link text-white" aria-current="page" href="#home">Home</a>
+                        <a class="c-link nav-link text-white" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item px-3">
-                        <a class="nav-link text-white" href="#about">About</a>
+                        <a class="c-link nav-link text-white" href="#about">About</a>
                     </li>
                     <li class="nav-item dropdown px-3">
 
-                        <a class="nav-link dropdown-toggle text-white" href="#news" role="button"
+                        <a class="c-link nav-link dropdown-toggle text-white" href="#news" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             News
                         </a>
                         <ul class="dropdown-menu bg-black px-3">
-                            <li><a class="dropdown-item text-white" href="./pages/new1.html">New1</a></li>
-                            <li><a class="dropdown-item text-white" href="./pages/new2.html">New2</a></li>
-                            <li><a class="dropdown-item text-white" href="./pages/new3.html#">New3</a></li>
+                            <li><a class="c-link dropdown-item text-white" href="./pages/new1.html">New1</a></li>
+                            <li><a class="c-link dropdown-item text-white" href="./pages/new2.html">New2</a></li>
+                            <li><a class="c-link dropdown-item text-white" href="./pages/new3.html#">New3</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown px-3">
-                        <a class="nav-link dropdown-toggle text-white" href="#gallery" role="button"
+                        <a class="c-link nav-link dropdown-toggle text-white" href="#gallery" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Gallery
                         </a>
                         <ul class="dropdown-menu bg-black px-3">
-                            <li><a class="dropdown-item text-white" href="./pages/gallery.html">Full gallery</a>
+                            <li><a class="c-link  dropdown-item text-white" href="./pages/gallery.html">Full gallery</a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item px-3">
-                        <a class="nav-link text-white" href="#contact">Contact</a>
+                        <a class="c-link nav-link text-white" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -72,7 +72,7 @@
                 <div class="col-lg-12 m-5">
                     <h1 class="display-1">ABYSMIAL</h1>
                     <h2 class="display-5">Dark thematic AI art</h2>
-                    <a class="mt-2 btn btn-primary btn-lg" href="#contact" role="button">
+                    <a class="c-link mt-2 btn btn-primary btn-lg" href="#contact" role="button">
                         <h3 class="display-5">Contact us</h3>
                     </a>
                 </div>
@@ -115,7 +115,7 @@
             <div class="row text-end">
                 <div class="col-12 col-md-6 col-lg-4 mb-5">
                     <div class="card border-0">
-                        <a class="img-link" href="./pages/new1.html"> <!--con esto hago un link desde una img-->
+                        <a class="c-img-link" href="./pages/new1.html"> <!--con esto hago un link desde una img-->
                             <img src="./media/img/collections/crow/crow_1.webp" class="card-img" alt="the crow">
                         </a>
                         <div class="card-body">
@@ -130,7 +130,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 mb-5">
                     <div class="card border-0">
-                        <a class="img-link" href="./pages/new2.html">
+                        <a class="c-img-link" href="./pages/new2.html">
                             <img src="./media/img/collections/beauty/beauty_1.webp" class="card-img" alt="the beauty">
                         </a>
                         <div class="card-body">
@@ -146,7 +146,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 mb-5">
                     <div class="card border-0">
-                        <a class="img-link" href="./pages/new3.html">
+                        <a class="c-img-link" href="./pages/new3.html">
                             <img src="./media/img/collections/awakening/awakening_1.webp" class="card-img"
                                 alt="the awakening">
                         </a>
@@ -203,7 +203,7 @@
             </div>
             <div class="d-grid col-4 mx-auto">
                 <!--mx-auto lo centra horizontalmente, con col le digo cuanto ocupa-->
-                <a class="mt-2 btn btn-primary btn-lg" href="./pages/gallery.html" role="button">View all</a>
+                <a class="c-link mt-2 btn btn-primary btn-lg" href="./pages/gallery.html" role="button">View all</a>
 
             </div>
         </div>
@@ -255,7 +255,7 @@
     <footer class="bg-black text-white py-5">
         <div class="container">
             <!--md-left hace que se -->
-            <div class="row">
+            <div class="row c-footer-center">
                 <div class="col-xl-6">
                     <!--fw es font weight-->
 
@@ -278,6 +278,12 @@
         </div>
 
     </footer>
+
+    <div class="c-scroll-top">
+        <a class=" c-scroll-top__link c-scroll-top-icon" href="#home">
+            <i class="fs-2 bi bi-arrow-up-circle-fill"></i></a>
+    </div>
+
     <!--importo script de boostrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
