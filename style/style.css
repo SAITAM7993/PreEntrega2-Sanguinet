@@ -23,7 +23,7 @@ header{
 #gallery-full,
 #contact,
 #new {
-    margin: 3% 0 3% 0;
+     padding: 5%;  
     /*este padding si lo ponia con medidas absolutas me dejaba mal el responsive*/
 }
  .c-h1,
