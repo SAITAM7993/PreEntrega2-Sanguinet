@@ -18,9 +18,8 @@
 </head>
 
 <body>
-
     <section id="home">
-
+        <!--inicio navbar-->
         <nav class="navbar fixed-top navbar-expand-lg bg-black" data-bs-theme="dark">
             <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -30,7 +29,7 @@
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
                 <!-- justify-content-center centra todo, va aca para que el boton de mobile no quede centrado-->
-                <ul class="navbar-nav fs-5">
+                <ul class="navbar-nav">
                     <li class="nav-item px-3"> <!--px es padding derecha-->
                         <a class="c-link nav-link text-white" aria-current="page" href="#home">Home</a>
                     </li>
@@ -38,22 +37,24 @@
                         <a class="c-link nav-link text-white" href="#about">About</a>
                     </li>
                     <li class="nav-item dropdown px-3">
-
-                        <a class="c-link nav-link dropdown-toggle text-white" href="#news" role="button"
+                        <a class="c-link nav-link dropdown-toggle text-white" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             News
                         </a>
+                        <!--subitems de news-->
                         <ul class="dropdown-menu bg-black px-3">
-                            <li><a class="c-link dropdown-item text-white" href="./pages/new1.html">New1</a></li>
-                            <li><a class="c-link dropdown-item text-white" href="./pages/new2.html">New2</a></li>
-                            <li><a class="c-link dropdown-item text-white" href="./pages/new3.html#">New3</a></li>
+                            <li><a class="c-link dropdown-item text-white" href="./pages/new1.html">The crow</a></li>
+                            <li><a class="c-link dropdown-item text-white" href="./pages/new2.html">The beauty</a></li>
+                            <li><a class="c-link dropdown-item text-white" href="./pages/new3.html#">The awakening</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown px-3">
-                        <a class="c-link nav-link dropdown-toggle text-white" href="#gallery" role="button"
+                        <a class="c-link nav-link dropdown-toggle text-white" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Gallery
                         </a>
+                        <!--subitem de gallery-->
                         <ul class="dropdown-menu bg-black px-3">
                             <li><a class="c-link  dropdown-item text-white" href="./pages/gallery.html">Full gallery</a>
                             </li>
@@ -64,44 +65,42 @@
                     </li>
                 </ul>
             </div>
-
         </nav>
-
+        <!--fin navbar-->
+        <!--boton de contacto y titulo/subtitulo-->
         <header class="d-flex flex-column justify-content-center text-white">
             <div class="container-fluid">
-                <div class="col-lg-12 m-5">
-                    <h1 class="display-1">ABYSMIAL</h1>
-                    <h2 class="display-5">Dark thematic AI art</h2>
+                <div class="col-lg-12 m-3 c-text-center">
+                    <h1 class="display-1 c-h1">ABYSMIAL</h1>
+                    <h2 class="display-5 c-h2">Dark thematic AI art</h2>
                     <a class="c-link mt-2 btn btn-primary btn-lg" href="#contact" role="button">
-                        <h3 class="display-5">Contact us</h3>
+                        <h3 class="display-5 c-h3">Contact us</h3>
                     </a>
                 </div>
             </div>
+        </header>
     </section>
 
-    </header>
-
-
-    <section id="about">
+    <section class="container mt-5 mb-5" id="about">
         <main>
-            <div class="container mt-5 mb-5">
-                <div class="card border-0">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img src="./media/img/single/reckoner.webp" class="img-fluid rounded c-image" alt="...">
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card-body">
-                                <h2 class="card-title display-1 fw-normal py-5">About us</h2>
-                                <!--fs es font size cuanto más grande menor tamaño - idem a h1 h2 lead le da un estilo -->
-                                <p class="card-text fs-2 lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Eum
-                                    odit vel
-                                    debitis tempora, dolorum incidunt cumque voluptatibus aliquam voluptates nobis et.
-                                    Qui
-                                    ex
-                                    autem earum praesentium eligendi, aliquid iure? Impedit?</p>
-                            </div>
+            <div class="card border-0">
+                <!--una row con dos columnas, una img y la otra el titulo con texto-->
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="./media/img/single/reckoner.webp" class="img-fluid rounded c-image" alt="...">
+                    </div>
+                    <div class="col-md-6 px-4">
+                        <div class="card-body">
+                            <h2 class="card-title display-1 fw-normal py-3">About us</h2>
+                            <!--fs es font size cuanto más grande menor tamaño - idem a h1 h2 lead le da un estilo -->
+                            <p class="card-text fs-2 lead text-primary">Lorem ipsum, dolor sit amet consectetur
+                                adipisicing
+                                elit.
+                                Eum.
+                            </p>
+                            <p class="card-text fs-2 lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Eum odit vel autem earum praesentium eligendi, aliquid iure? Impedit?</p>
+
                         </div>
                     </div>
                 </div>
@@ -109,179 +108,172 @@
         </main>
     </section>
 
-    <section id="news">
-        <div class="container mt-2 mb-2">
-            <!--container-fluid hace que ocupe el 100 de la pantalla-->
-            <div class="row text-end">
-                <div class="col-12 col-md-6 col-lg-4 mb-5">
-                    <div class="card border-0">
-                        <a class="c-img-link" href="./pages/new1.html"> <!--con esto hago un link desde una img-->
-                            <img src="./media/img/collections/crow/crow_1.webp" class="card-img" alt="the crow">
-                        </a>
-                        <div class="card-body">
-                            <h3 class="card-title fs-2 py-2">The crow</h3>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-                                beatae
-                                magnam neque sit doloribus, voluptate cupiditate fugit ex, rerum commodi sequi ducimus.
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-5">
-                    <div class="card border-0">
-                        <a class="c-img-link" href="./pages/new2.html">
-                            <img src="./media/img/collections/beauty/beauty_1.webp" class="card-img" alt="the beauty">
-                        </a>
-                        <div class="card-body">
-                            <h3 class="card-title fs-2 py-2">The beauty</h3>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-                                beatae
-                                magnam neque sit doloribus, voluptate cupiditate
-                                fugit ex, rerum commodi sequi ducimus soluta fuga dolores maiores id. </p>
-
-                            <!--con mb-5 lo separo un poco cuando se vuelve una columna-->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-5">
-                    <div class="card border-0">
-                        <a class="c-img-link" href="./pages/new3.html">
-                            <img src="./media/img/collections/awakening/awakening_1.webp" class="card-img"
-                                alt="the awakening">
-                        </a>
-                        <div class="card-body">
-                            <h3 class="card-title fs-2 py-2">The awakening</h3>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-                                beatae
-                                magnam neque sit doloribus.</p>
-
-                        </div>
-                    </div>
-                </div>
+    <section class="container mt-2 mb-3" id="news">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="display-1 fw-normal pb-2">News</h3>
             </div>
         </div>
-    </section>
-    <section id="gallery">
-        <div class="container">
-            <div class="row">
-                <!--p-2 es el padding-->
-                <div class="col-xl-3 col-md-6 col-sm-12 p-2">
-                    <img class="img-fluid" src="./media/img/single/loneliness.webp" alt="loneliness">
-                </div>
-                <div class="col-xl-3 col-md-6 col-sm-12 p-2">
-                    <img class="img-fluid" src="./media/img/single/home.webp" alt="home">
-                </div>
-                <div class=" col-xl-3 col-md-6 col-sm-12 p-2">
-                    <img class="img-fluid" src="./media/img/single/expanse.webp" alt="expanse">
-                </div>
-                <div class="col-xl-3 col-md-6 col-sm-12 p-2">
-                    <img class="img-fluid" src="./media/img/single/forgiveness.webp" alt="forgiveness">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-6 col-sm-12 p-2">
-                    <img class="img-fluid" src="./media/img/single/blueIcon_2.webp" alt="blue icon">
-                </div>
-                <div class="col-xl-6 col-sm-12 p-2">
-                    <img class="img-fluid" src="./media/img/single/blueIcon_3.webp" alt="blue icon 2">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-3 col-md-6 col-sm-12 p-2">
-                    <img class="img-fluid" src="./media/img/single/iconOfSin.webp" alt="icon of sin">
-                </div>
-                <div class="col-xl-3 col-md-6 col-sm-12 p-2">
-                    <img class="img-fluid" src="./media/img/single/theCastle.webp" alt="the castle">
-                </div>
-                <div class="col-xl-3 col-md-6 col-sm-12 p-2">
-                    <img class="img-fluid" src="./media/img/single/vulnerability.webp" alt="vulnerability">
-                </div>
-                <div class="col-xl-3 col-md-6 col-sm-12 p-2">
-                    <img class="img-fluid" src="./media/img/single/decayingMemory.webp" alt="decaying memory">
-                </div>
-            </div>
-            <div class="d-grid col-4 mx-auto">
-                <!--mx-auto lo centra horizontalmente, con col le digo cuanto ocupa-->
-                <a class="c-link mt-2 btn btn-primary btn-lg" href="./pages/gallery.html" role="button">View all</a>
-
-            </div>
-        </div>
-
-    </section>
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-sm-12 p-5">
-                    <h2 class="card-title display-1 fw-normal mb-5 py-2">Contact us</h2>
-                    <!--fs es font size cuanto más grande menor tamaño - idem a h1 h2 lead le da un estilo -->
-                    <p class="card-text fs-3 lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Eum
-                        odit vel
-                        debitis tempora, dolorum incidunt cumque voluptatibus aliquam voluptates nobis et.
-                        Quiex.
-                    </p>
-                </div>
-                <div class="col-xl-6 col-sm-12 p-5">
-                    <form>
-                        <div class="mb-3">
-                            <label for="inputMail" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="inputMail" placeholder="jconstantine@mail.com">
-
-                        </div>
-                        <div class="mb-3">
-                            <label for="inputName" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="inputName" placeholder="John Constantine">
-                        </div>
-                        <div class="mb-3">
-                            <label for="inputSubject" class="form-label">Subject</label>
-                            <input type="text" class="form-control" id="inputSubject" placeholder="Art commission">
-                        </div>
-                        <div class="mb-3">
-                            <label for="inputMessage" class="form-label">Message</label>
-                            <textarea class="form-control" id="inputMessage" rows="3"
-                                placeholder="Your message"></textarea>
-                        </div>
-                        <div class="d-grid col-4 mx-auto">
-                            <!--mx-auto lo centra horizontalmente, con col le digo cuanto ocupa-->
-                            <button type="submit" class="mt-2 btn btn-primary btn-lg c-button">Submit</button>
-                        </div>
-
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="bg-black text-white py-5">
-        <div class="container">
-            <!--md-left hace que se -->
-            <div class="row c-footer-center">
-                <div class="col-xl-6">
-                    <!--fw es font weight-->
-
-                    <p class="fw-bold">Contact</p>
-                    <!--text-center alinea al centro el icono | py es padding eje y-->
-                    <a class="text-white" href="https://www.instagram.com/abysmial/">
-                        <p><i class="bi bi-instagram text-center"></i> Abysmial</p>
+        <!--container-fluid hace que ocupe el 100 de la pantalla-->
+        <div class="row text-end">
+            <div class="col-12 col-md-6 col-lg-4 mb-2">
+                <div class="card border-0">
+                    <a class="c-img-link" href="./pages/new1.html"> <!--con esto hago un link desde una img-->
+                        <img src="./media/img/collections/crow/crow_1.webp" class="card-img" alt="the crow">
                     </a>
-                    <p></p><i class="bi bi-envelope text-center"></i> mail@gmail.com</p>
-                    <p></p><i class="bi bi-telephone text-center"></i> 099 027 878</p>
+                    <div class="card-body">
+                        <h3 class="card-title fs-2 py-2">The crow</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                            beatae magnam neque sit doloribus, voluptate cupiditate fugit ex, rerum commodi sequi
+                            ducimus.
+                        </p>
+                    </div>
                 </div>
-                <div class="col-xl-6">
-                    <p class="fw-bold">Credits</p>
-                    <p>Site by Msanguinet</p>
-                    <a class="text-white" href="https://www.instagram.com/abysmial/">
-                        <p>Art by Abysmial</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-2">
+                <div class="card border-0">
+                    <a class="c-img-link" href="./pages/new2.html">
+                        <img src="./media/img/collections/beauty/beauty_1.webp" class="card-img" alt="the beauty">
                     </a>
+                    <div class="card-body">
+                        <h3 class="card-title fs-2 py-2">The beauty</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                            beataemagnam neque sit doloribus, voluptate cupiditate
+                            fugit ex, rerum commodi sequi ducimus soluta fuga dolores maiores id. </p>
+
+                        <!--con mb-3 lo separo un poco cuando se vuelve una columna-->
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-2">
+                <div class="card border-0">
+                    <a class="c-img-link" href="./pages/new3.html">
+                        <img src="./media/img/collections/awakening/awakening_1.webp" class="card-img"
+                            alt="the awakening">
+                    </a>
+                    <div class="card-body">
+                        <h3 class="card-title fs-2 py-2">The awakening</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                            beataemagnam neque sit doloribus.</p>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
 
+    <section class="container" id="gallery">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-end">
+                <h3 class="display-1 fw-normal pb-2">Gallery</h3>
+            </div>
+        </div>
+        <div class="row">
+            <!--p-2 es el padding-->
+            <div class="col-xl-3 col-md-6 col-sm-12 p-2">
+                <img class="img-fluid" src="./media/img/single/loneliness.webp" alt="loneliness">
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12 p-2">
+                <img class="img-fluid" src="./media/img/single/home.webp" alt="home">
+            </div>
+            <div class=" col-xl-3 col-md-6 col-sm-12 p-2">
+                <img class="img-fluid" src="./media/img/single/expanse.webp" alt="expanse">
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12 p-2">
+                <img class="img-fluid" src="./media/img/single/forgiveness.webp" alt="forgiveness">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-6 col-sm-12 p-2">
+                <img class="img-fluid" src="./media/img/single/blueIcon_2.webp" alt="blue icon">
+            </div>
+            <div class="col-xl-6 col-sm-12 p-2">
+                <img class="img-fluid" src="./media/img/single/blueIcon_3.webp" alt="blue icon 2">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-3 col-md-6 col-sm-12 p-2">
+                <img class="img-fluid" src="./media/img/single/iconOfSin.webp" alt="icon of sin">
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12 p-2">
+                <img class="img-fluid" src="./media/img/single/theCastle.webp" alt="the castle">
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12 p-2">
+                <img class="img-fluid" src="./media/img/single/vulnerability.webp" alt="vulnerability">
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12 p-2">
+                <img class="img-fluid" src="./media/img/single/decayingMemory.webp" alt="decaying memory">
+            </div>
+        </div>
+        <div class="d-grid col-4 mx-auto py-5">
+            <!--mx-auto lo centra horizontalmente, con col le digo cuanto ocupa-->
+            <a class="c-link mt-2 btn btn-primary btn-lg" href="./pages/gallery.html" role="button">View more</a>
+        </div>
+    </section>
+
+    <section class="container" id="contact">
+        <div class="row">
+            <div class="col-xl-6 col-sm-12 p-5">
+                <h2 class="card-title display-1 fw-normal mb-5 py-2">Contact us</h2>
+                <!--fs es font size cuanto más grande menor tamaño - idem a h1 h2 lead le da un estilo -->
+                <p class="card-text fs-3 lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Eum odit vel debitis tempora, dolorum incidunt cumque voluptatibus aliquam voluptates nobis et.
+                    Quiex.
+                </p>
+            </div>
+            <div class="col-xl-6 col-sm-12 p-5">
+                <form>
+                    <div class="mb-3">
+                        <label for="inputMail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="inputMail" placeholder="jconstantine@mail.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="John Constantine">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputSubject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="inputSubject" placeholder="Art commission">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputMessage" class="form-label">Message</label>
+                        <textarea class="form-control" id="inputMessage" rows="3" placeholder="Your message"></textarea>
+                    </div>
+                    <div class="d-grid col-4 mx-auto">
+                        <!--mx-auto lo centra horizontalmente, con col le digo cuanto ocupa-->
+                        <button type="submit" class="mt-2 btn btn-primary btn-lg c-button">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid justify-content-center d-flex bg-black text-white p-5">
+        <div class="row mx-auto">
+
+            <div class="col-xl-6 c-footer-space align-self-center">
+                <!--fw es font weight-->
+                <p class="fw-bold">Contact</p>
+                <!--text-center alinea al centro el icono | py es padding eje y-->
+                <a class="text-white" href="https://www.instagram.com/abysmial/">
+                    <p><i class="bi bi-instagram text-center"></i> Abysmial</p>
+                </a>
+                <p><i class="bi bi-envelope text-center"></i> mail@mail.com</p>
+                <p><i class="bi bi-telephone text-center"></i> 099 027 878</p>
+            </div>
+            <div class="col-xl-6 c-footer-space">
+                <p class="fw-bold">Credits</p>
+                <p>Site by MSan</p>
+                <a class="text-white" href="https://www.instagram.com/abysmial/">
+                    <p>Art by Abysmial</p>
+                </a>
+            </div>
+        </div>
     </footer>
 
     <div class="c-scroll-top">
         <a class=" c-scroll-top__link c-scroll-top-icon" href="#home">
-            <i class="fs-2 bi bi-arrow-up-circle-fill"></i></a>
+            <i class="fs-2 bi bi-arrow-up-circle-fill"></i>
+        </a>
     </div>
 
     <!--importo script de boostrap-->

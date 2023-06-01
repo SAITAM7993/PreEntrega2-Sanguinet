@@ -8,7 +8,7 @@
 header{      
     height: 75vh;    
     background-image:url(../media/misc/banner.webp) ;
-    background: linear-gradient(to right, rgba(0,0,0,0.7),rgba(0,0,0,0.1), rgba(0,0,0,0)), url(../media/misc/banner.webp) no-repeat; /*para que me haga una sombra a la izquierda y no moleste fondo con el texto*/
+    background: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.1), rgba(0,0,0,0)), url(../media/misc/banner.webp) no-repeat; /*para que me haga una sombra a la izquierda y no moleste fondo con el texto*/
     background-size: cover;      
     background-repeat: no-repeat;  
     background-position: top;   
@@ -17,9 +17,19 @@ header{
 /*fin header*/
 
 /*general inicio*/
-#about, #news, #gallery, #gallery-full, #contact, #new{
-    padding: 5%; /*este padding si lo ponia con medidas absolutas me dejaba mal el responsive*/
+#about,
+#news,
+#gallery,
+#gallery-full,
+#contact,
+#new {
+    margin: 3% 0 3% 0;
+    /*este padding si lo ponia con medidas absolutas me dejaba mal el responsive*/
 }
+ .c-h1,
+ .c-h2 {
+     text-shadow: 1px 1px 10px black;
+ }
 /*fin general*/
 
 /*inicio clases custom*/
@@ -86,11 +96,16 @@ a {
     /*para sacarle formato a los links del footer*/
 }
 
+.c-footer-space{ /*para separar los items del footer*/
+    margin:0 20px 0 20px;
+    width: 170px;    
+}
 .navbar-toggler {
     border: none;
 }
- h3{
-    margin:15px 40px 15px 40px;
+/*para el boton del header*/
+ .c-h3{
+    margin:5px 50px 5px 50px;
 }
 .navbar-toggler{
     border:0;
@@ -100,26 +115,45 @@ a {
 }
 .navbar-toggler:focus,.navbar-toggler:active, .navbar-toggler-icon:focus{
     /*le saco el resaltado del menu hamburguesa*/
-outline: none;
-box-shadow: none;
-border: 0;
+    outline: none;
+    box-shadow: none;
+    border: 0;
 }
 
-.btn{
-   
-    border-radius: 50px; /*para redondear botonesde boostrap*/
+.btn{   
+    border-radius: 50px; /*para redondear botones de boostrap*/
     background-color: #0d6efd !important;
 }
 
 /* fin cambios genericos y de boostrap*/
-@media (max-width:1200px) {
-    /*para que quede centrado en dispositivos chicos*/
-    .c-footer-center {
+@media (max-width:763px) {
+.c-text-center {
         text-align: center;
+    }
+}
+
+@media (max-width:511px) {   
+    /*para que quede centrado en dispositivos chicos*/
+   
+    .c-footer-space {
+        /*para separar los items del footer*/
+        margin: 0;      
     }
     .c-scroll-top {
         position: absolute;
         right: 2rem;
+    }        
+    /*para que quede centrado en dispositivos chicos*/
+   .c-scroll-top {
+        position: absolute;
+        right: 2rem;
     }
+  .c-h3 {
+      margin: 5px 30px 5px 30px;
+  }  
+ .display-5 {
+     font-size: 25px;  
+ }
 
+  
 }
